@@ -25,7 +25,7 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Cart', style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.grey[600],
         elevation: 0,
       ),
       body: Container(
@@ -40,7 +40,7 @@ class _CartScreenState extends State<CartScreen> {
             ? Center(
           child: Text(
             'Your cart is empty',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(color: Colors.black, fontSize: 20),
           ),
         )
             : ListView.builder(
@@ -48,7 +48,7 @@ class _CartScreenState extends State<CartScreen> {
           itemBuilder: (context, index) {
             return ListTile(
               leading: Image.asset(CartScreen.cartItems[index]['image'], width: 50, height: 50),
-              title: Text(CartScreen.cartItems[index]['name'], style: TextStyle(color: Colors.white)),
+              title: Text(CartScreen.cartItems[index]['name'], style: TextStyle(color: Colors.black)),
               subtitle: Text('\$${CartScreen.cartItems[index]['price']}', style: TextStyle(color: Colors.blue)),
               trailing: IconButton(
                 icon: Icon(Icons.remove_circle, color: Colors.red),

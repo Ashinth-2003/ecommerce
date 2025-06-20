@@ -20,7 +20,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Favorites', style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.grey[600],
         elevation: 0,
       ),
       body: Container(
@@ -35,7 +35,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             ? Center(
           child: Text(
             'No favorite items yet',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(color: Colors.black, fontSize: 20),
           ),
         )
             : ListView.builder(
